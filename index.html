@@ -1590,20 +1590,6 @@
         submitButton.textContent = 'Жөнөтүү';
       }
     });
-
-    // Check if already submitted
-    const existingRsvp = localStorage.getItem('rsvp_submissions');
-    if (existingRsvp) {
-      try {
-        const submissions = JSON.parse(existingRsvp);
-        if (submissions && submissions.length > 0) {
-          rsvpForm.style.display = 'none';
-          thankYouMessage.style.display = 'block';
-        }
-      } catch (e) {
-        console.log('Error checking existing submissions');
-      }
-    }
   </script>
 </body>
 </html>
